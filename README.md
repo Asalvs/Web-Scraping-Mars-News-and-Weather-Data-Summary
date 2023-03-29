@@ -1,5 +1,43 @@
-# Web-scraping
+# Web Scraping Mars News and Weather Data - Summary
 
-I used web scraping techniques to extract information about Mars from two different sources. In Part 1, I scraped the Mars News website to extract the titles and preview text of news articles. I used Beautiful Soup to extract text elements from the website, and stored the results in Python data structures, including dictionaries and lists.
+This project focused on extracting and analyzing Mars news articles and weather data from websites using web scraping techniques.
 
-In Part 2, I scraped and analyzed Mars weather data from the Mars Temperature Data Site. I used automated browsing to visit the website and identify which elements to scrape. Then, I extracted the data using Beautiful Soup and Pandas, cleaned and manipulated the data, and performed some basic analysis, such as calculating summary statistics and creating visualizations. This analysis help you understand the climate patterns on Mars and inform future missions to the planet.
+## Overview
+
+The goal of this project was to:
+
+1. Scrape titles and preview text from Mars news articles.
+2. Scrape and analyze Mars weather data in an HTML table.
+
+## Tools and Technologies
+
+- Python
+- Jupyter Notebook
+- Beautiful Soup
+- Splinter
+- Pandas
+
+## Project Structure
+
+### Part 1: Mars News Scraping
+
+1. Used automated browsing with Splinter to visit the Mars news site.
+2. Created a Beautiful Soup object to parse the HTML content.
+3. Extracted the titles and preview text of the news articles.
+4. Stored the scraping results in a list of dictionaries with 'title' and 'preview' keys.
+5. Printed the list in the Jupyter Notebook.
+6. Optionally, stored the scraped data in a JSON file for easier sharing.
+
+### Part 2: Mars Weather Data Scraping and Analysis
+
+1. Used automated browsing with Splinter to visit the Mars Temperature Data Site.
+2. Created a Beautiful Soup object to scrape the data in the HTML table.
+3. Assembled the scraped data into a Pandas DataFrame with appropriate column headings.
+4. Examined and cast the data types to appropriate datetime, int, or float data types if necessary.
+5. Analyzed the dataset to answer questions related to Martian months, days, temperature, and atmospheric pressure.
+6. Visualized the results using bar charts and line plots.
+7. Exported the DataFrame to a CSV file.
+
+## Conclusion
+
+This project demonstrated the ability to effectively use web scraping techniques to collect and analyze data from Mars-related websites. The findings provide valuable insights into Martian months, days, temperature, and atmospheric pressure.
